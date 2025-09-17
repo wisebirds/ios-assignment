@@ -23,7 +23,9 @@
    - 광고 데이터는 아래 API 참조:
    - https://.postman.co/workspace/My-Workspace~826d78a5-bd43-4e28-8e68-e789e1a62bc6/request/20290523-cac5a027-ce56-49d3-80b7-1c22c92c952f?action=share&creator=20290523
 4. **노출 추적 기능**
-   - 이미지가 화면에 표시될 때마다 `print("on screen")` 호출
+   - 이미지가 화면에 안 보이다가 조금이라도 보일때 `print("on screen")` 호출
+   - 이미지가 다시 화면에서 사라진 후 다시 화면에 조금이라도 보이면 `print("on screen")` 호출
+   - 이미지가 계속 화면에 보일 경우 반복적으로 호출하지 않음
 
 #### 2. SDK 활용한 광고 구현
 
