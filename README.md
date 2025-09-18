@@ -2,12 +2,14 @@
 
 ### 제출 조건
 
-1. 과제 repo clone 후 개인 github 에 private repository 로 push 후 Settings > Collaborators and teams > Manage access > Add People > dy128.kim@wisebirds.com 계정을 추가해주세요
+1. 과제 repo clone 후 개인 github 에 private repository 생성 후 Settings > Collaborators and teams > Manage access > Add People > dy128.kim@wisebirds.com 계정을 추가해주세요
 2. **제출 방법**: 과제 시작 시간부터 4시간 이내 필수로 push 해주세요.
    (시간이 부족할 경우 6시간 이내 추가로 push 할 수 있지만 추가 검토용으로만 참고될 예정입니다.)
 3. 아래 구현 요구사항 외에는 제약 사항 없이 자유롭게 구현해주시면 됩니다.
 4. **평가 기준**: 기능 구현 완성도 및 설계 품질을 중점 검토 예정입니다.
    - 이미지, 팝업 광고 외에 다양한 형식의 광고가 추가될 수 있다고 가정해주세요.
+5. **유의 사항** :
+   채용 과제 내용 및 진행 방식에 대한 일체의 정보 및 자료은 회사의 사전 서면 동의 없이 제3자에게 공개, 누설 또는 제공하는 것을 엄격히 금지하고 있습니다.
 
 ### 구현 내용
 
@@ -22,8 +24,16 @@
 2. **팝업 광고 모듈**
    - 팝업을 띄워 광고를 렌더링하는 기능
 3. **광고 데이터 연동**
-   - 광고 데이터는 아래 API 참조:
-   - https://.postman.co/workspace/My-Workspace~826d78a5-bd43-4e28-8e68-e789e1a62bc6/request/20290523-cac5a027-ce56-49d3-80b7-1c22c92c952f?action=share&creator=20290523
+   - 광고 데이터는 아래 API 참고
+   - API URL: https://zimobhtejidbcsrujhxd.supabase.co/rest/v1/ads?select=*
+   - method: GET
+   - headers
+     ```
+     {
+        apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InppbW9iaHRlamlkYmNzcnVqaHhkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTgwOTgxNzYsImV4cCI6MjA3MzY3NDE3Nn0.oi_IEKXYWgSUwrCNGVWtZhRf2ys92N028Kp1Km9vOXE",
+        Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InppbW9iaHRlamlkYmNzcnVqaHhkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTgwOTgxNzYsImV4cCI6MjA3MzY3NDE3Nn0.oi_IEKXYWgSUwrCNGVWtZhRf2ys92N028Kp1Km9vOXE"
+     }
+     ```
 4. **노출 추적 기능**
    - 이미지가 화면에 안 보이다가 조금이라도 보일때 `print("on screen")` 호출
    - 이미지가 다시 화면에서 사라진 후 (ex. 스크롤, 팝업 닫기, 앱 전환 등 다양한 경우 있음) 다시 화면에 조금이라도 보이면 `print("on screen")` 호출
