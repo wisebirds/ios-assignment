@@ -5,7 +5,10 @@
 1. 과제 repo clone 후 개인 github 에 private repository 생성 후 Settings > Collaborators and teams > Manage access > Add People > dy128.kim@wisebirds.com, jinyeong.lee@wisebirds.com 계정을 추가해주세요
 2. **제출 방법**: 과제 시작 시간부터 4시간 이내 필수로 push 해주세요.
    (시간이 부족할 경우 6시간 이내 추가로 push 할 수 있지만 추가 검토용으로만 참고될 예정입니다.)
-3. 아래 구현 요구사항 외에는 제약 사항 없이 자유롭게 구현해주시면 됩니다.
+3. **제약 사항**
+   - UIKit 으로 개발
+   - 기타 package 사용 지양 (사용시 사용하게된 이유를 PACKAGE.md 파일에 작성 필요)
+   - 그 외에는 제약 사항 없이 자유롭게 구현해주시면 됩니다.
 4. **평가 기준**: 기능 구현 완성도 및 설계 품질을 중점 검토 예정입니다.
    - 이미지, 팝업 광고 외에 다양한 형식의 광고가 추가될 수 있다고 가정해주세요.
 5. **유의 사항** :
