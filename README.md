@@ -28,6 +28,7 @@
    - 팝업을 띄워 광고를 렌더링하는 기능
 3. **광고 데이터 연동**
 
+   - 광고 위치 마다 unique 한 API URI 를 사용하게 된다고 생각해주세요.
    - 광고 데이터는 아래 API 참고
    - API headers
 
@@ -38,14 +39,14 @@
      }
      ```
 
-     a. 이미지 광고 API
+     a. 이미지 광고 위치에 필요한 API
 
-     - API URL: https://zimobhtejidbcsrujhxd.supabase.co/rest/v1/ads?select=*&type=eq.image
+     - API URI: https://zimobhtejidbcsrujhxd.supabase.co/rest/v1/ads?select=*&id=eq.1
      - method: GET
 
-     b. 팝업 광고 API
+     b. 팝업 광고 위치에 필요한 API
 
-     - API URL: https://zimobhtejidbcsrujhxd.supabase.co/rest/v1/ads?select=*&type=eq.popup
+     - API URI: https://zimobhtejidbcsrujhxd.supabase.co/rest/v1/ads?select=*&id=eq.2
      - method: GET
 
 4. **노출 추적 기능**
