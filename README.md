@@ -27,16 +27,27 @@
 2. **팝업 광고 모듈**
    - 팝업을 띄워 광고를 렌더링하는 기능
 3. **광고 데이터 연동**
+
    - 광고 데이터는 아래 API 참고
-   - API URL: https://zimobhtejidbcsrujhxd.supabase.co/rest/v1/ads?select=*
-   - method: GET
-   - headers
+   - API headers
+
      ```
      {
         apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InppbW9iaHRlamlkYmNzcnVqaHhkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTgwOTgxNzYsImV4cCI6MjA3MzY3NDE3Nn0.oi_IEKXYWgSUwrCNGVWtZhRf2ys92N028Kp1Km9vOXE",
         Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InppbW9iaHRlamlkYmNzcnVqaHhkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTgwOTgxNzYsImV4cCI6MjA3MzY3NDE3Nn0.oi_IEKXYWgSUwrCNGVWtZhRf2ys92N028Kp1Km9vOXE"
      }
      ```
+
+     a. 이미지 광고 API
+
+     - API URL: https://zimobhtejidbcsrujhxd.supabase.co/rest/v1/ads?select=*&type=eq.image
+     - method: GET
+
+     b. 팝업 광고 API
+
+     - API URL: https://zimobhtejidbcsrujhxd.supabase.co/rest/v1/ads?select=*&type=eq.popup
+     - method: GET
+
 4. **노출 추적 기능**
    - 이미지가 화면에 안 보이다가 조금이라도 보일때 `print("on screen")` 호출
    - 이미지가 다시 화면에서 사라진 후 (ex. 스크롤, 팝업 닫기, 앱 전환 등 다양한 경우 있음) 다시 화면에 조금이라도 보이면 `print("on screen")` 호출
